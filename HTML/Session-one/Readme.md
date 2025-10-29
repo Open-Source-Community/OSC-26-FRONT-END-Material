@@ -19,7 +19,6 @@
     - [Paragraph Element](https://github.com/Open-Source-Community/OSC-25-Front-End-Material/tree/master/HTML/Session-one#paragraph-element)
     - [Anchors](https://github.com/Open-Source-Community/OSC-25-Front-End-Material/tree/master/HTML/Session-one#anchors)
     - [Images](https://github.com/Open-Source-Community/OSC-25-Front-End-Material/tree/master/HTML/Session-one#images)
-    - [Lists](https://github.com/Open-Source-Community/OSC-25-Front-End-Material/tree/master/HTML/Session-one#lists)
     - [Span Element](https://github.com/Open-Source-Community/OSC-25-Front-End-Material/tree/master/HTML/Session-one#span-element)
     - [Break Element](https://github.com/Open-Source-Community/OSC-25-Front-End-Material/tree/master/HTML/Session-one#break-element)
     - [Horizontal Rule](https://github.com/Open-Source-Community/OSC-25-Front-End-Material/tree/master/HTML/Session-one#horizontal-rule)
