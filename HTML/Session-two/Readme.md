@@ -2,7 +2,6 @@ HTML Tutorial
 Here we will learn the HTML Elements, Its types, and usage.
 
 Agenda
-Lists
 Formatting Elements
 Tables
 Divisions
@@ -14,76 +13,6 @@ Video
 Forms
 Other Elements
 Formatting Elements
-
-Lists:
-
-1- UnOrdered List : Created by element <ul> and inside it some list items <li>.
-
-<ul id="List-first-example">
-  <li>things</li>
-  <li>without</li>
-  <li>order
-    <ul>
-      <li>also</li>
-      <li>can be</li>
-      <li>nested</li>
-    </ul>
-  </li>
-</ul>
-Output:
-
-unorderedListPicture
-
-2- Ordered List : Created by element <ol> and inside it some list items <li>.
-
-<ol id="List-second-example" type="a">
-  <li value="4">things</li>
-  <li>with</li>
-  <li>order
-    <ol reversed start="8">
-      <li>also</li>
-      <li>can be</li>
-      <li>nested</li>
-    </ol>
-  </li>
-</ol>
-Output:
-
-orderedListPicture
-
-attribute reversed : reverses the order of the list items.
-
-attribute start : starts the list numbers from specific number.
-
-attribute value : you can put a value in first <li> element to start from specific value by it's index.
-
-attribute type : specifies the type of the list numbering.
-
-types : ( 1 [Numeric], A [Alphabetical Capital Letters], a [Alphabetical Small Letters], I [Romanichal Capital Letters], i [Romanichal Small Letters]).
-
-lists can be nested.
-
-3- Description List : Created by element <dl> and used for writing a list with description for every item.
-
-<dl id="List-third-example">
-  <dt> SomeItem </dt>
-  <dd> Description of that item </dd>
-  <dd> Can have multiple lines</dd>
-  <dt> Some Other Item </dt>
-  <dd> Description for that other item </dd>
-</dl>
-Output:
-
-descriptionListPicture
-
-inside it:
-
-1- <dt> (Data Title) : for identifying the item.
-
-2- <dd> (Data Details) : for identifying the details for that item.
-
-Formatting Elements
-
 the <b> element is for bold text and for designing text style only.
 
 Like:
@@ -146,8 +75,6 @@ it's a block element
 
 the <table> element is used to make a table in the web page, it's a block element.
 Format:
-
-Tables:
 
 <table class="Tables-first-example" border="1" cellpadding="5px">
   <thead>
@@ -239,7 +166,7 @@ Output:
 
 DivPicture
 
-Entities:
+Entities
 It's a method to print any tag or any special character like it was written in the code
 
 < : &lt;
@@ -253,7 +180,7 @@ Output:
 
 EntitiesPicture
 
-Semantic Elements:
+Semantic Elements
 From HTML5 and all of them are block elements.
 
 They are elements that can specify what the content is more than divisions by only one word and without the need of classes like divisions.
@@ -665,4 +592,5 @@ Code Element <code> is used to create a container for any code like JavaScript o
 
 Pre-Formatted text Element <pre> is used to create a container like p for paragraphs and it understands and keeps all spaces you wrote. --> block element
 
+Inline Frame Element <iframe> is used to create a mini window that contains another page (Inside our website or not). --> inline element
 Inline Frame Element <iframe> is used to create a mini window that contains another page (Inside our website or not). --> inline element
