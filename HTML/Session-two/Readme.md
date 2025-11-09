@@ -2,6 +2,7 @@ HTML Tutorial
 Here we will learn the HTML Elements, Its types, and usage.
 
 Agenda
+Lists
 Formatting Elements
 Tables
 Divisions
@@ -13,135 +14,206 @@ Video
 Forms
 Other Elements
 Formatting Elements
-the <b> element is for bold text and for designing text style only.
 
-Like:
+Lists:
 
-<p id="Formatting-first-example"> This is my <b> Toturial </b>, Welcome </p>
-the <strong> element is for important bold text and the user should be aware of it.
+    1- UnOrdered List : Created by element <ul> and inside it some list items <li>.
+    
+    <ul id="List-first-example">
+      <li>things</li>
+      <li>without</li>
+      <li>order
+        <ul>
+          <li>also</li>
+          <li>can be</li>
+          <li>nested</li>
+        </ul>
+      </li>
+    </ul>
+    Output:
+    
+    unorderedListPicture
+    
+    2- Ordered List : Created by element <ol> and inside it some list items <li>.
+    
+    <ol id="List-second-example" type="a">
+      <li value="4">things</li>
+      <li>with</li>
+      <li>order
+        <ol reversed start="8">
+          <li>also</li>
+          <li>can be</li>
+          <li>nested</li>
+        </ol>
+      </li>
+    </ol>
+    Output:
+    
+    orderedListPicture
+    
+    attribute reversed : reverses the order of the list items.
+    
+    attribute start : starts the list numbers from specific number.
+    
+    attribute value : you can put a value in first <li> element to start from specific value by it's index.
+    
+    attribute type : specifies the type of the list numbering.
+    
+    types : ( 1 [Numeric], A [Alphabetical Capital Letters], a [Alphabetical Small Letters], I [Romanichal Capital Letters], i [Romanichal Small Letters]).
+    
+    lists can be nested.
+    
+    3- Description List : Created by element <dl> and used for writing a list with description for every item.
+    
+    <dl id="List-third-example">
+      <dt> SomeItem </dt>
+      <dd> Description of that item </dd>
+      <dd> Can have multiple lines</dd>
+      <dt> Some Other Item </dt>
+      <dd> Description for that other item </dd>
+    </dl>
+    Output:
+    
+    descriptionListPicture
+    
+    inside it:
+    
+    1- <dt> (Data Title) : for identifying the item.
+    
+    2- <dd> (Data Details) : for identifying the details for that item.
 
-Like:
+Formatting Elements
 
-<p id="Formatting-second-example"> This is my <strong> Toturial </strong>, Welcome </p>
-the <i> element is for italic text.
+    the <b> element is for bold text and for designing text style only.
+    
+    Like:
+    
+    <p id="Formatting-first-example"> This is my <b> Toturial </b>, Welcome </p>
+    the <strong> element is for important bold text and the user should be aware of it.
+    
+    Like:
+    
+    <p id="Formatting-second-example"> This is my <strong> Toturial </strong>, Welcome </p>
+    the <i> element is for italic text.
+    
+    Like:
+    
+    <p id="Formatting-third-example"> This is my <i> Toturial </i>, Welcome </p>
+    the <em> element is for important italic text.
+    
+    Like:
+    
+    <p id="Formatting-fourth-example"> This is my <em> Toturial </em>, Welcome </p>
+    the difference between <i> and <em> is the same difference between <strong> and <b>.
+    
+    the <mark> element is for marked text.
+    
+    Like:
+    
+    <p id="Formatting-fifth-example"> This is my <mark> Toturial </mark>, Welcome </p>
+    the <u> element is for underlined text.
+    
+    Like:
+    
+    <p id="Formatting-sixth-example"> This is my <u> Toturial </u>, Welcome </p>
+    the <small> element is for the text that we don't want the user to concentrate on but still it should exist there like "Copyrights".
+    
+    Like:
+    
+    <p id="Formatting-seventh-example"> <small> Copyright </small> </p>
+    the <del> element is for deleted text and is used to show some text that was wrong and you corrected it , like discounts.
+    
+    Like:
+    
+    <p id="Formatting-eighth-example"> This is my <del> Toturial </del> Course, Welcome </p>
+    the <ins> element is for inserted text and is used to show some new added text.
+    
+    Like:
+    
+    <p id="Formatting-ninth-example"> This is my <ins> Course </ins>, Welcome </p>
+    the <sub> element is subscript like atoms number in a compound.
+    
+    Like:
+    
+    <p id="Formatting-tenth-example"> NH<sub>3</sub> </p>
+    the <sup> element is superscript like Power.
+    
+    Like:
+    
+    <p id="Formatting-eleventh-example"> 2<sup>3</sup> = 8 </p>
+    Tables
+    it's a block element
+    
+    the <table> element is used to make a table in the web page, it's a block element.
+    Format:
 
-Like:
+Tables:
 
-<p id="Formatting-third-example"> This is[Readme.md](https://github.com/user-attachments/files/23437585/Readme.md)
- my <i> Toturial </i>, Welcome </p>
-the <em> element is for important italic text.
-
-Like:
-
-<p id="Formatting-fourth-example"> This is my <em> Toturial </em>, Welcome </p>
-the difference between <i> and <em> is the same difference between <strong> and <b>.
-
-the <mark> element is for marked text.
-
-Like:
-
-<p id="Formatting-fifth-example"> This is my <mark> Toturial </mark>, Welcome </p>
-the <u> element is for underlined text.
-
-Like:
-
-<p id="Formatting-sixth-example"> This is my <u> Toturial </u>, Welcome </p>
-the <small> element is for the text that we don't want the user to concentrate on but still it should exist there like "Copyrights".
-
-Like:
-
-<p id="Formatting-seventh-example"> <small> Copyright </small> </p>
-the <del> element is for deleted text and is used to show some text that was wrong and you corrected it , like discounts.
-
-Like:
-
-<p id="Formatting-eighth-example"> This is my <del> Toturial </del> Course, Welcome </p>
-the <ins> element is for inserted text and is used to show some new added text.
-
-Like:
-
-<p id="Formatting-ninth-example"> This is my <ins> Course </ins>, Welcome </p>
-the <sub> element is subscript like atoms number in a compound.
-
-Like:
-
-<p id="Formatting-tenth-example"> NH<sub>3</sub> </p>
-the <sup> element is superscript like Power.
-
-Like:
-
-<p id="Formatting-eleventh-example"> 2<sup>3</sup> = 8 </p>
-Tables
-it's a block element
-
-the <table> element is used to make a table in the web page, it's a block element.
-Format:
-
-<table class="Tables-first-example" border="1" cellpadding="5px">
-  <thead>
-    <caption> The caption of the table </caption>
-    <tr>
-      <th> First Column Name </th>
-      <th> Second Column Name </th>
-      <th> Third Column Name </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2"> First Column Data1 </td>
-      <td> Second Column Data1 </td>
-      <td> Third Column Data1 </td>
-    </tr>
-    <tr>
-      <td> Second Column Data2 </td>
-      <td> Third Column Data2 </td>
-    </tr>
-    <tr>
-      <td> First Column Data3 </td>
-      <td> Second Column Data3 </td>
-      <td> Third Column Data3 </td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="2"> Footer </td>
-      <td> Third Column Footer </td>
-    </tr>
-  </tfoot>
-</table>
-Output:
-
-TablesPicture
-
-SubElements (All is optional but recommended for organizing the table):
-
-<thead> : is for adding header to the table.
-
-<tbody> : is for adding data to the table.
-
-<tfoot> : is for adding footer to the table.
-
-<caption> : is for adding some caption to the table, it's like a title that explains what the table is about.
-
-SubSubElements:
-
-<th> : is for adding header to the table, it makes the header in a special formatting from the rest rows.
-
-<tr> : is for adding a new row.
-
-<td> : is for adding data in that row depending on the number of columns expected.
-
-Attributes (not recommended because it has alternates in CSS):
-
-border : for making a border.
-
-cellpadding : for making a padding.
-
-Merging :
-
-Columns : remove all of the columns that should be merged except one then write the attribute colspan and the number of these columns.
-
-Rows : remove all of the rows that should be merged except one then write the attribute rowspan and the number of these rows.
+    <table class="Tables-first-example" border="1" cellpadding="5px">
+      <thead>
+        <caption> The caption of the table </caption>
+        <tr>
+          <th> First Column Name </th>
+          <th> Second Column Name </th>
+          <th> Third Column Name </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2"> First Column Data1 </td>
+          <td> Second Column Data1 </td>
+          <td> Third Column Data1 </td>
+        </tr>
+        <tr>
+          <td> Second Column Data2 </td>
+          <td> Third Column Data2 </td>
+        </tr>
+        <tr>
+          <td> First Column Data3 </td>
+          <td> Second Column Data3 </td>
+          <td> Third Column Data3 </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"> Footer </td>
+          <td> Third Column Footer </td>
+        </tr>
+      </tfoot>
+    </table>
+    Output:
+    
+    TablesPicture
+    
+    SubElements (All is optional but recommended for organizing the table):
+    
+    <thead> : is for adding header to the table.
+    
+    <tbody> : is for adding data to the table.
+    
+    <tfoot> : is for adding footer to the table.
+    
+    <caption> : is for adding some caption to the table, it's like a title that explains what the table is about.
+    
+    SubSubElements:
+    
+    <th> : is for adding header to the table, it makes the header in a special formatting from the rest rows.
+    
+    <tr> : is for adding a new row.
+    
+    <td> : is for adding data in that row depending on the number of columns expected.
+    
+    Attributes (not recommended because it has alternates in CSS):
+    
+    border : for making a border.
+    
+    cellpadding : for making a padding.
+    
+    Merging :
+    
+    Columns : remove all of the columns that should be merged except one then write the attribute colspan and the number of these columns.
+    
+    Rows : remove all of the rows that should be merged except one then write the attribute rowspan and the number of these rows.
 
 Divisions
 Is a block element
@@ -150,110 +222,110 @@ Is used to contain other elements that are related to each other and make your f
 
 You can use classes and ids to specify each div.
 
-Example:
+    Example:
+    
+    <div class="Numbers" style="background-color: aqua;">
+        <p> 1 </p>
+        <p> 2 </p>
+        <p> 3 </p>
+    </div>
+    
+    <div class="Alphabets" style="background-color: rgb(255, 0, 0);">
+        <p> A </p>
+        <p> B </p>
+        <p> C </p>
+    </div>
+    Output:
+    
+    DivPicture
+    
+    Entities:
+    It's a method to print any tag or any special character like it was written in the code
+    
+    < : &lt;
+    > : &gt;
+    & : &amp;
+    also &asymp; -> ≈ , &copy; -> ©, &quot; -> " and more..
+    Examble:
+    
+    <div> A paragraph &asymp; is written by &lt;p&gt; &quot;element&quot; &copy;</div>
+    Output:
+    
+    EntitiesPicture
 
-<div class="Numbers" style="background-color: aqua;">
-    <p> 1 </p>
-    <p> 2 </p>
-    <p> 3 </p>
-</div>
-
-<div class="Alphabets" style="background-color: rgb(255, 0, 0);">
-    <p> A </p>
-    <p> B </p>
-    <p> C </p>
-</div>
-Output:
-
-DivPicture
-
-Entities
-It's a method to print any tag or any special character like it was written in the code
-
-< : &lt;
-> : &gt;
-& : &amp;
-also &asymp; -> ≈ , &copy; -> ©, &quot; -> " and more..
-Examble:
-
-<div> A paragraph &asymp; is written by &lt;p&gt; &quot;element&quot; &copy;</div>
-Output:
-
-EntitiesPicture
-
-Semantic Elements
+Semantic Elements:
 From HTML5 and all of them are block elements.
 
 They are elements that can specify what the content is more than divisions by only one word and without the need of classes like divisions.
 
 in the previous if you want to create navigation bar :
 
-<div class="nav"> content </div>
-but now you can just type :
-
-<nav> content </nav>
-And then, you can style it easily and quickly without any conflicts and there is more than the examples below.
-
-Note: they are not different in performance they just have specific name, I mean the elements in the example below will not be styled at all.
-
-<header> some header </header>
-<nav> link - other link - third link</nav>
-<section>
+    <div class="nav"> content </div>
+    but now you can just type :
+    
+    <nav> content </nav>
+    And then, you can style it easily and quickly without any conflicts and there is more than the examples below.
+    
+    Note: they are not different in performance they just have specific name, I mean the elements in the example below will not be styled at all.
+    
+    <header> some header </header>
+    <nav> link - other link - third link</nav>
     <section>
-        <article>
-            some article
-        </article>
-        <article>
-            other article
-        </article>
+        <section>
+            <article>
+                some article
+            </article>
+            <article>
+                other article
+            </article>
+        </section>
+        <aside>
+            some reference or ads
+        </aside>
     </section>
-    <aside>
-        some reference or ads
-    </aside>
-</section>
-<footer> Footer </footer>
-Output:
-
-SemanticsPicture
+    <footer> Footer </footer>
+    Output:
+    
+    SemanticsPicture
 
 Dev Break 😊
 Let's Make some Simple page with divisions and classes only.
 
-<div class="header">
-      <h2> Logo </h2>
-      <ul>
-          <li> Home </li>
-          <li> About </li>
-          <li> Contact </li>
-          <li> Favorites </li>
-          <li> For You </li>
-      </ul>
-  </div>
-  <hr>
-  <div class="navigation">
-      <ul>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-      </ul>
-  </div>
-  <hr>
-  <div class="content">
-      <div class="figure">
-          <img src="" alt="Picture" />
-          <p> Some Caption </p>
-      </div>
-  </div>
-  <div class="sidebar"> SideBar </div>
-  <hr>
-  <div class="footer"> Footer </div>
-If you see here, we need to provide a class for everty section of the page.
-
-Output:
+  <div class="header">
+        <h2> Logo </h2>
+        <ul>
+            <li> Home </li>
+            <li> About </li>
+            <li> Contact </li>
+            <li> Favorites </li>
+            <li> For You </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="navigation">
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="content">
+        <div class="figure">
+            <img src="" alt="Picture" />
+            <p> Some Caption </p>
+        </div>
+    </div>
+    <div class="sidebar"> SideBar </div>
+    <hr>
+    <div class="footer"> Footer </div>
+  If you see here, we need to provide a class for everty section of the page.
+  
+  Output:
 
 DivsExPicture
 
@@ -572,7 +644,7 @@ Examples:
     <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
     <br>
     <input type="reset" value="Reset">
-    <input type="submit" value="Send">  
+    <input type="submit" value="Send">
 </form>
 Output:
 
@@ -594,5 +666,3 @@ Code Element <code> is used to create a container for any code like JavaScript o
 Pre-Formatted text Element <pre> is used to create a container like p for paragraphs and it understands and keeps all spaces you wrote. --> block element
 
 Inline Frame Element <iframe> is used to create a mini window that contains another page (Inside our website or not). --> inline element
-Inline Frame Element <iframe> is used to create a mini window that contains another page (Inside our website or not). --> inline element
-
