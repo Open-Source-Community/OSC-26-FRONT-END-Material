@@ -1,19 +1,20 @@
 HTML Tutorial
-Here we will learn the HTML Elements, Its types, and usage.
+
+	Here we will learn the HTML Elements, Its types, and usage.
 
 Agenda
-Lists
-Formatting Elements
-Tables
-Divisions
-Entities
-Semantic Elements
-Dev Break 😊
-Audio
-Video
-Forms
-Other Elements
-Formatting Elements
+	Lists
+	Formatting Elements
+	Tables
+	Divisions
+	Entities
+	Semantic Elements
+	Dev Break 😊
+	Audio
+	Video
+	Forms
+	Other Elements
+	Formatting Elements
 
 Lists:
 
@@ -185,7 +186,7 @@ Tables:
     
     TablesPicture
     
-    SubElements (All is optional but recommended for organizing the table):
+SubElements (All is optional but recommended for organizing the table):
     
     <thead> : is for adding header to the table.
     
@@ -195,7 +196,7 @@ Tables:
     
     <caption> : is for adding some caption to the table, it's like a title that explains what the table is about.
     
-    SubSubElements:
+SubSubElements:
     
     <th> : is for adding header to the table, it makes the header in a special formatting from the rest rows.
     
@@ -239,26 +240,27 @@ You can use classes and ids to specify each div.
     
     DivPicture
     
-    Entities:
+Entities:
     It's a method to print any tag or any special character like it was written in the code
     
-    < : &lt;
-    > : &gt;
-    & : &amp;
-    also &asymp; -> ≈ , &copy; -> ©, &quot; -> " and more..
+	    < : &lt;
+	    > : &gt;
+	    & : &amp;
+	    also &asymp; -> ≈ , &copy; -> ©, &quot; -> " and more..
+	
     Examble:
     
-    <div> A paragraph &asymp; is written by &lt;p&gt; &quot;element&quot; &copy;</div>
+	    <div> A paragraph &asymp; is written by &lt;p&gt; &quot;element&quot; &copy;</div>
     Output:
     
     EntitiesPicture
 
 Semantic Elements:
-From HTML5 and all of them are block elements.
+ From HTML5 and all of them are block elements.
 
-They are elements that can specify what the content is more than divisions by only one word and without the need of classes like divisions.
+ They are elements that can specify what the content is more than divisions by only one word and without the need of classes like divisions.
 
-in the previous if you want to create navigation bar :
+ in the previous if you want to create navigation bar :
 
     <div class="nav"> content </div>
     but now you can just type :
@@ -430,85 +432,85 @@ Example:
 Forms:
 it's a block element
 
-the attribute [ Action ] : this attribute is responsible for sending data submitted to a specific destination file
+  the attribute [ Action ] : this attribute is responsible for sending data submitted to a specific destination file
 
-the attribute [ Method ] : this attribute is specifies the method to send the data to the destination file, there is a lot of methods but the most common are (GET, POST), GET is sending the data and prints it in the URL above while POST is sending the data without printing it in the URL above.
+  the attribute [ Method ] : this attribute is specifies the method to send the data to the destination file, there is a lot of methods but the most common are     (GET, POST), GET is sending the data and prints it in the URL above while POST is sending the data without printing it in the URL above.
 
-the attribute [ novalidate ] : this attribute is used to disable validation of the form which is useful in the testing stage.
+ the attribute [ novalidate ] : this attribute is used to disable validation of the form which is useful in the testing stage.
 
-the attribute [ target ] : this attribute is used to tell the browser where to receive the respond after submitting the form and it's values are (_blank,_parent, _self, _top, or other file path). it's used to create a form, and you can put any element in the <form> element like <div> and <p>, but there is some elements that are preferred to be in this element:
+ the attribute [ target ] : this attribute is used to tell the browser where to receive the respond after submitting the form and it's values are       (_blank,_parent, _self, _top, or other file path). it's used to create a form, and you can put any element in the <form> element like <div> and <p>, but there is  some elements that are preferred to be in this element:
 
-the <input> element : it's inline element and self closing element.
+ the <input> element : it's inline element and self closing element.
 
-this is most important and used element in the form, it's default output is textbox
+ this is most important and used element in the form, it's default output is textbox
 
-the attribute [ type ] : specifies what this input is for, (button, checkbox, color, date, datetime, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week)
+ the attribute [ type ] : specifies what this input is for, (button, checkbox, color, date, datetime, datetime-local, email, file, hidden, image, month, number,   password, radio, range, reset, search, submit, tel, text, time, url, week)
 
-the attribute [ required ] : this will not allow the user to submit the form data without typing anything in that input field
+ the attribute [ required ] : this will not allow the user to submit the form data without typing anything in that input field
 
-the attribute [ placeholder ] : this will appear inside the input field, you can type anything that helps the user to write the needed data well, when the user starts typing the placeholder will be invisible
+ the attribute [ placeholder ] : this will appear inside the input field, you can type anything that helps the user to write the needed data well, when the user   starts typing the placeholder will be invisible
 
-the attribute [ value ] : this attribute makes the input field hold some value (default value, old value) and will be visible to the user and he can edit it, and if you type it on the submit button the word submit will be changed to what you written
+ the attribute [ value ] : this attribute makes the input field hold some value (default value, old value) and will be visible to the user and he can edit it,     and if you type it on the submit button the word submit will be changed to what you written
 
-the attribute [ name ] : specifies the name of the input field before sending the data to the destination file, this helps the destination file to make difference between fields.
+ the attribute [ name ] : specifies the name of the input field before sending the data to the destination file, this helps the destination file to make difference between fields.
 
-the attribute [ readonly ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that field will be sent in the request successfully.
+ the attribute [ readonly ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that   field will be sent in the request successfully.
 
-the attribute [ disabled ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that field will not be sent in the request.
+ the attribute [ disabled ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that  field will not be sent in the request.
 
-the attribute [ autofocus ] : this makes the browser focus on that field whenever the page loads.
+ the attribute [ autofocus ] : this makes the browser focus on that field whenever the page loads.
 
-the attribute [ minlength ] : used with the text type input, makes a constrain on the user to write at least the minimum length of characters.
+ the attribute [ minlength ] : used with the text type input, makes a constrain on the user to write at least the minimum length of characters.
 
-the attribute [ maxlength ] : used with the text type input, makes a constrain on the user to write at much the maximum length of characters.
+ the attribute [ maxlength ] : used with the text type input, makes a constrain on the user to write at much the maximum length of characters.
 
-the attribute [ checked ] : used with radio type input, makes that radio button field checked initially.
+ the attribute [ checked ] : used with radio type input, makes that radio button field checked initially.
 
-the <label> element : it's inline element this element describes some info about the input element after it.
+ the <label> element : it's inline element this element describes some info about the input element after it.
 
-the <select> element : it's inline element
+ the <select> element : it's inline element
 
-this element makes a drop down list of options to select from. like menu for example.
+ this element makes a drop down list of options to select from. like menu for example.
 
-the attribute [ multiple ] : this allows the user to select more than one option by selecting them with the control button on the keyboard.
+ the attribute [ multiple ] : this allows the user to select more than one option by selecting them with the control button on the keyboard.
 
-the attribute [ selected ] : this makes that field of options is selected automatically when the page loads.
+ the attribute [ selected ] : this makes that field of options is selected automatically when the page loads.
 
-the <opiongroup> element : is holding a group of options of the list.
+ the <opiongroup> element : is holding a group of options of the list.
 
-the <option> element : is holding every single option in the list.
+ the <option> element : is holding every single option in the list.
 
-the <textarea> element : it's inline element
+ the <textarea> element : it's inline element
 
-this element allows the user to write as much as he would like and with a resizable area for editing.
+ this element allows the user to write as much as he would like and with a resizable area for editing.
 
-the attribute [ cols ] : this gives the text area the size of columns used in it initially and the user can change it by dragging the bottom right corner to left and right.
+ the attribute [ cols ] : this gives the text area the size of columns used in it initially and the user can change it by dragging the bottom right corner to left and right.
 
-the attribute [ rows ] : this gives the text area the size of rows used in it initially and the user can change it by dragging the bottom right corner to up and down.
+ the attribute [ rows ] : this gives the text area the size of rows used in it initially and the user can change it by dragging the bottom right corner to up and down.
 
-the <datalist> element : it's inline element this element is similar to the <select> element except that:
+ the <datalist> element : it's inline element this element is similar to the <select> element except that:
 
-must be an input element before this element holding an attribute called list with any value and then giving an id to the datalist element with the same value.
+ must be an input element before this element holding an attribute called list with any value and then giving an id to the datalist element with the same value.
 
-it's options doesn't need closing tags.
+ it's options doesn't need closing tags.
 
-the user can search in this list by typing in this field some characters.
+ the user can search in this list by typing in this field some characters.
 
 Example: if we type the character "r" the result will be (JavaScript, Ruby, Dart)
 
 Notes:
 
-the radio input options must have the same name, if we didn't do that, the user can select both of them.
+ the radio input options must have the same name, if we didn't do that, the user can select both of them.
 
-if we want to link the label with it's input field we can do like:
+ if we want to link the label with it's input field we can do like:
 
-<div>
-    <input id="m" type="radio" name="gender" value="male" checked>
-    <label for="m">Male</label>
-</div>
-and now the user can click the label and automatically select it's input field.
+	<div>
+	    <input id="m" type="radio" name="gender" value="male" checked>
+	    <label for="m">Male</label>
+	</div>
+ and now the user can click the label and automatically select it's input field.
 
-also this is applied to the other input fields.
+ also this is applied to the other input fields.
 
 Examples:
 
@@ -668,4 +670,5 @@ Other Elements
 	Pre-Formatted text Element <pre> is used to create a container like p for paragraphs and it understands and keeps all spaces you wrote. --> block element
 	
 	Inline Frame Element <iframe> is used to create a mini window that contains another page (Inside our website or not). --> inline element
+
 
