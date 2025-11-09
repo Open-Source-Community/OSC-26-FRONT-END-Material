@@ -331,38 +331,38 @@ DivsExPicture
 
 Now, Let's make the same simple page using semantic elements.
 
-<header>
-    <h2> Logo </h2>
-    <ul>
-        <li> Home </li>
-        <li> About </li>
-        <li> Contact </li>
-        <li> Favorites </li>
-        <li> For You </li>
-    </ul>
-</header>
-<hr>
-<nav>
-    <ul>
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
-    </ul>
-</nav>
-<hr>
-<section>
-    <figure>
-        <img src="" alt="Picture" />
-        <figcaption> Some Caption </figcaption>
-    </figure>
-</section>
-<aside> SideBar </aside>
-<hr>
-<footer> Footer </footer>
+	<header>
+	    <h2> Logo </h2>
+	    <ul>
+	        <li> Home </li>
+	        <li> About </li>
+	        <li> Contact </li>
+	        <li> Favorites </li>
+	        <li> For You </li>
+	    </ul>
+	</header>
+	<hr>
+	<nav>
+	    <ul>
+	        <li>link</li>
+	        <li>link</li>
+	        <li>link</li>
+	        <li>link</li>
+	        <li>link</li>
+	        <li>link</li>
+	        <li>link</li>
+	    </ul>
+	</nav>
+	<hr>
+	<section>
+	    <figure>
+	        <img src="" alt="Picture" />
+	        <figcaption> Some Caption </figcaption>
+	    </figure>
+	</section>
+	<aside> SideBar </aside>
+	<hr>
+	<footer> Footer </footer>
 Here, by using the semantic elements we decreased our usage of the classes and the code now is more simple.
 
 Output:
@@ -371,7 +371,7 @@ SemanticsExPicture
 
 And also, the final view is the same. So, using semantic elements is very important.
 
-Audio
+Audio:
 It's inline element.
 
 It's used to include audio in the page.
@@ -393,12 +393,13 @@ If the browser doesn't support the audio tag the sentence below will appear inst
 
 Example:
 
-<audio controls autoplay loop muted src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
-    <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg" type="audio/ogg">
-    <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-button.m4a" type="audio/m4a">
-    Your Browser Doesn't support the audio tag
-</audio>
-Video
+	<audio controls autoplay loop muted src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+	    <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg" type="audio/ogg">
+	    <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-button.m4a" type="audio/m4a">
+	    Your Browser Doesn't support the audio tag
+	</audio>
+	
+Video:
 It's inline element.
 
 All things written for audio also apply on video element, but there is some additional attributes:
@@ -419,13 +420,14 @@ the attribute [ preload ] : this attribute can lead to the best user experience,
 
 Example:
 
-<video controls muted autoplay loop width="100%" height="500px" poster="images/Ain_Shams_logo.png" preload="none">
-    <source src="./media/Search_Google_preview.mp4" type="video/mp4">
-    Your Browser Doesn't support the video tag
-    <track src="file_en.vtt" kind="subtitles" srclang="en" label="English">
-    <track src="file_it.vtt" kind="subtitles" srclang="it" label="Italian">
-</video>
-Forms
+	<video controls muted autoplay loop width="100%" height="500px" poster="images/Ain_Shams_logo.png" preload="none">
+	    <source src="./media/Search_Google_preview.mp4" type="video/mp4">
+	    Your Browser Doesn't support the video tag
+	    <track src="file_en.vtt" kind="subtitles" srclang="en" label="English">
+	    <track src="file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+	</video>
+
+Forms:
 it's a block element
 
 the attribute [ Action ] : this attribute is responsible for sending data submitted to a specific destination file
@@ -510,159 +512,160 @@ also this is applied to the other input fields.
 
 Examples:
 
-<form action="distination.php" method="get" novalidate target="_top">
-    <div>
-        <input type="hidden" required name="user-id">
-    </div>
-    <br>
-    <div>
-        <label>Upload Profile Picture</label>
-        <input type="file" name="file">
-    </div>
-    <br>
-    <div>
-        <label>Profile Color</label>
-        <input type="color" name="Color">
-    </div>
-    <br>
-    <div>
-        <label>Search</label>
-        <input type="search" name="search">
-    </div>
-    <br>
-    <div>
-        <label>URL</label>
-        <input type="url" name="url">
-    </div>
-    <br>
-    <div>
-        <label>Birth Date</label>
-        <input type="date" name="date">
-    </div>
-    <br>
-    <div>
-        <label>Month</label>
-        <input type="month" name="month">
-    </div>
-    <br>
-    <div>
-        <label>Time</label>
-        <input type="time" name="time">
-    </div>
-    <br>
-    <div>
-        <label>Username</label>
-        <input type="text" required placeholder="like: myusername12" value="Nada" name="userName" readonly>
-    </div>
-    <br>
-    <div>
-        <label>Email</label>
-        <input type="email" name="email" value="email@gmail.com" disabled>
-    </div>
-    <br>
-    <div>
-        <label>Phone Number</label>
-        <input type="number" name="phoneNumber" min="01000000000" max="100000000000" step="20" placeholder="01111111111">
-    </div>
-    <br>
-    <div>
-        <label>Password</label>
-        <input type="password" required name="pass" minlength="10" maxlength="20">
-    </div>
-    <br>
-    <div>
-        <label> Programming Languages</label>
-        <input list="programming" name="proglang">
-        <datalist id="programming">
-            <option value="JavaScript">
-            <option value="Scala">
-            <option value="C">
-            <option value="C#">
-            <option value="C++">
-            <option value="Python">
-            <option value="PHP">
-            <option value="Java">
-            <option value="Ruby">
-            <option value="Dart">
-        </datalist>
-    </div>
-    <br>
-    <div>
-        <select name="country" id="country" multiple>
-            <optgroup label="Africa">
-                <option value="egypt" selected>Egypt</option>
-                <option value="Libya">Libya</option>
-                <option value="Sudan">Sudan</option>
-            </optgroup>
-            <optgroup label="Asia">
-                <option value="korea">Korea</option>
-                <option value="china">China</option>
-                <option value="japan">Japan</option>
-            </optgroup>
-            <optgroup label="Europe">
-                <option value="britan">Britan</option>
-                <option value="italy">Italy</option>
-                <option value="german">German</option>
-            </optgroup>
-        </select>
-
-        <label>Address</label>
-        <input type="text" value="cairo" name="address" autofocus>
-    </div>
-    <br>
-
-    <div>
-        <label>Rate</label>
-        <input type="range" name="range" min="0" max="100" step="20" value="0">
-    </div>
-    <br>
-    <div>
-        <input type="radio" name="gender" value="male" checked>
-        <label>Male</label>
-    </div>
-    <div>
-        <input type="radio" name="gender" value="female">
-        <label>Female</label>
-    </div>
-    <br>
-    <div>
-        <input type="checkbox" name="hobbies" value="swimming" checked>
-        <label>Swimming</label>
-    </div>
-    <br>
-    <div>
-        <input type="checkbox" name="hobbies" value="singing">
-        <label>Singing</label>
-    </div>
-    <br>
-    <div>
-        <input type="checkbox" name="hobbies" value="playfootball">
-        <label>Playing Football</label>
-    </div>
-    <br>
-    <label for="comment">Any Additional Notes</label> <br>
-    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-    <br>
-    <input type="reset" value="Reset">
-    <input type="submit" value="Send">
-</form>
+	<form action="distination.php" method="get" novalidate target="_top">
+	    <div>
+	        <input type="hidden" required name="user-id">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Upload Profile Picture</label>
+	        <input type="file" name="file">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Profile Color</label>
+	        <input type="color" name="Color">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Search</label>
+	        <input type="search" name="search">
+	    </div>
+	    <br>
+	    <div>
+	        <label>URL</label>
+	        <input type="url" name="url">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Birth Date</label>
+	        <input type="date" name="date">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Month</label>
+	        <input type="month" name="month">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Time</label>
+	        <input type="time" name="time">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Username</label>
+	        <input type="text" required placeholder="like: myusername12" value="Nada" name="userName" readonly>
+	    </div>
+	    <br>
+	    <div>
+	        <label>Email</label>
+	        <input type="email" name="email" value="email@gmail.com" disabled>
+	    </div>
+	    <br>
+	    <div>
+	        <label>Phone Number</label>
+	        <input type="number" name="phoneNumber" min="01000000000" max="100000000000" step="20" placeholder="01111111111">
+	    </div>
+	    <br>
+	    <div>
+	        <label>Password</label>
+	        <input type="password" required name="pass" minlength="10" maxlength="20">
+	    </div>
+	    <br>
+	    <div>
+	        <label> Programming Languages</label>
+	        <input list="programming" name="proglang">
+	        <datalist id="programming">
+	            <option value="JavaScript">
+	            <option value="Scala">
+	            <option value="C">
+	            <option value="C#">
+	            <option value="C++">
+	            <option value="Python">
+	            <option value="PHP">
+	            <option value="Java">
+	            <option value="Ruby">
+	            <option value="Dart">
+	        </datalist>
+	    </div>
+	    <br>
+	    <div>
+	        <select name="country" id="country" multiple>
+	            <optgroup label="Africa">
+	                <option value="egypt" selected>Egypt</option>
+	                <option value="Libya">Libya</option>
+	                <option value="Sudan">Sudan</option>
+	            </optgroup>
+	            <optgroup label="Asia">
+	                <option value="korea">Korea</option>
+	                <option value="china">China</option>
+	                <option value="japan">Japan</option>
+	            </optgroup>
+	            <optgroup label="Europe">
+	                <option value="britan">Britan</option>
+	                <option value="italy">Italy</option>
+	                <option value="german">German</option>
+	            </optgroup>
+	        </select>
+	
+	        <label>Address</label>
+	        <input type="text" value="cairo" name="address" autofocus>
+	    </div>
+	    <br>
+	
+	    <div>
+	        <label>Rate</label>
+	        <input type="range" name="range" min="0" max="100" step="20" value="0">
+	    </div>
+	    <br>
+	    <div>
+	        <input type="radio" name="gender" value="male" checked>
+	        <label>Male</label>
+	    </div>
+	    <div>
+	        <input type="radio" name="gender" value="female">
+	        <label>Female</label>
+	    </div>
+	    <br>
+	    <div>
+	        <input type="checkbox" name="hobbies" value="swimming" checked>
+	        <label>Swimming</label>
+	    </div>
+	    <br>
+	    <div>
+	        <input type="checkbox" name="hobbies" value="singing">
+	        <label>Singing</label>
+	    </div>
+	    <br>
+	    <div>
+	        <input type="checkbox" name="hobbies" value="playfootball">
+	        <label>Playing Football</label>
+	    </div>
+	    <br>
+	    <label for="comment">Any Additional Notes</label> <br>
+	    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+	    <br>
+	    <input type="reset" value="Reset">
+	    <input type="submit" value="Send">
+	</form>
 Output:
 
 formExPicture
 
 Other Elements
-Quote Element <q> is used to hold a quoted phrase like a proverb or an aphorism. inline element
+	Quote Element <q> is used to hold a quoted phrase like a proverb or an aphorism. inline element
+	
+	Block Quote Element <blockquote> is also used to hold a proverb or an aphorism but is used when the proverb is a large paragraph. --> block element
+	
+	Button Element <button> is also used create a simple button with a specific functionality. --> inline-block element
+	
+	Word Break Opportunity Element <wbr> is used create a new line in the long paragraph when needed. --> Empty element (Self closed)
+	
+	Bidirectional Isolation Element <bdi> is used to isolate the different directions of typing text. like typing English with Arabic with numbers. --> 		inline element
+	
+	Code Element <code> is used to create a container for any code like JavaScript or Python. --> inline element
+	
+	Pre-Formatted text Element <pre> is used to create a container like p for paragraphs and it understands and keeps all spaces you wrote. --> block element
+	
+	Inline Frame Element <iframe> is used to create a mini window that contains another page (Inside our website or not). --> inline element
 
-Block Quote Element <blockquote> is also used to hold a proverb or an aphorism but is used when the proverb is a large paragraph. --> block element
-
-Button Element <button> is also used create a simple button with a specific functionality. --> inline-block element
-
-Word Break Opportunity Element <wbr> is used create a new line in the long paragraph when needed. --> Empty element (Self closed)
-
-Bidirectional Isolation Element <bdi> is used to isolate the different directions of typing text. like typing English with Arabic with numbers. --> inline element
-
-Code Element <code> is used to create a container for any code like JavaScript or Python. --> inline element
-
-Pre-Formatted text Element <pre> is used to create a container like p for paragraphs and it understands and keeps all spaces you wrote. --> block element
-
-Inline Frame Element <iframe> is used to create a mini window that contains another page (Inside our website or not). --> inline element
