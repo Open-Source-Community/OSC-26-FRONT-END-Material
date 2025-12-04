@@ -98,13 +98,15 @@ Resets default browser styling and establishes a consistent box model.
 
 - ## Opacity vs RGBA
   Controls element transparency.
-```css
+
+  ```css
     .opacity-example{
       background: rgba(255,0,0,0.5); /* background only */
       opacity: 0.5 ; /* Entire element */
 
     }  
-```
+    
+  ```
 
 ---
  
