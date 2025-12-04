@@ -91,24 +91,22 @@ Resets default browser styling and establishes a consistent box model.
 
 ``` 
 
- 
 
----------------------------------------------------------------- 
----
+
 
 - ## Opacity vs RGBA
-  Controls element transparency.
 
-  ```css
-    .opacity-example{
-      background: rgba(255,0,0,0.5); /* background only */
-      opacity: 0.5 ; /* Entire element */
+Controls element transparency.
 
-    }  
-    
-  ```
+```css
+.opacity-example {
+    background: rgba(255, 0, 0, 0.5); /* Background only */
+    opacity: 0.5; /* Entire element */
+}
+```
 
----
+ 
+
  
 ---------------------------------------------------------------- 
 
@@ -137,7 +135,7 @@ Resets default browser styling and establishes a consistent box model.
  
 
 ---------------------------------------------------------------- 
-
+---
 - ## Flexbox
   **Flexbox** creates flexible one-dimensional layouts that automatically adjust items to fit different screen sizes. It's ideal for navigation bars, cards, and any layout needing content alignment.
 
