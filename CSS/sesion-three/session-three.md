@@ -26,7 +26,10 @@ Resets default browser styling and establishes a consistent box model.
     padding: 0;
     box-sizing: border-box;
 }
+``` 
+
 ---------------------------------------------------------------- 
+
 - ## Overflow
 
   Controls content that exceeds container 
@@ -39,6 +42,7 @@ Resets default browser styling and establishes a consistent box model.
     overflow: auto; /* visible | hidden | scroll */ 
     
  } 
+ 
  ``` 
 
  
