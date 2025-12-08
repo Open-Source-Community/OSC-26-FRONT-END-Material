@@ -10,7 +10,6 @@ Third session css
 - [Opacity vs RGBA](#opacity-vs-rgba)
 - [Multi-column Layout](#multi-column-layout)
 - [Flexbox](#flexbox)
-- [CSS Grid](#css-grid)
 - [Transitions](#transitions)
 
 
@@ -168,35 +167,6 @@ Resets default browser styling and establishes a consistent box model.
   .nav-item {
     flex: 1;
     text-align: center;
-  }
-  ```
-
-----------------------------------------------------------------
-
-- ## CSS Grid
-  **CSS Grid** creates complex two-dimensional layouts with rows and columns. Perfect for image galleries, dashboards, and magazine-style layouts.
-
-  ### Core Concepts
-  ```css
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    grid-template-rows: 100px auto;       /* Explicit row sizes */
-    gap: 15px;                           /* Gutters */
-  }
-
-  .item {
-    grid-column: 1 / span 2; /* Start at column 1, span 2 columns */
-    grid-row: 2;            /* Place in second row */
-    align-self: end;       /* Vertical positioning */
-  }
-  ```
-
-  **Example**: Responsive gallery
-  ```css
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   ```
 
