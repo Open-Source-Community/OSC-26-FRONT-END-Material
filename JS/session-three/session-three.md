@@ -14,8 +14,31 @@
 
 ---
 
-## 1. DOM Basics  
-**Select Elements**:  
+
+## 1. DOM (Document Object Model )
+
+ 
+```javascript <body>
+  <div id="container">
+    <h1>Title</h1>
+    <p>Paragraph</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </div>
+</body>
+
+
+body
+ └── div#container
+      ├── h1
+      ├── p
+      └── ul
+           ├── li
+           └── li
+```
+**Select Elements**: 
 ```javascript
 // By ID (returns single element)
 const div1 = document.getElementById("div1");
